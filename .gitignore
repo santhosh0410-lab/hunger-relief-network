@@ -1,0 +1,5 @@
+backend/.env
+backend/hunger_relief.db
+backend/node_modules/
+hunger-relief-network/target/
+hunger-relief-network/

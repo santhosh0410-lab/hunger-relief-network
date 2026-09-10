@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hunger Relief Network</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     TOP NAVIGATION
+     ========================================================= -->
+
+<div class="topbar">
+
+  <div class="brand">
+
+    <div class="brand-mark">🍲</div>
+
+    <div>
+      <div class="brand-name">Hunger Relief Network</div>
+
+      <div class="brand-tag">
+        Surplus resources → the people who need them →
+      </div>
+    </div>
+
+  </div>
+
+  <nav class="roles" id="mainNav">
+
+    <button
+      data-view="home"
+      class="active"
+    >
+      Home
+    </button>
+
+    <button
+      data-view="login"
+      id="loginNavButton"
+    >
+      Login
+    </button>
+
+  </nav>
+
+</div>
+
+
+<!-- =========================================================
+     MAIN CONTENT
+     ========================================================= -->
+
+<main>
+
+<!-- =========================================================
+     HOME VIEW
+     ========================================================= -->
+
+<div class="view active" id="view-home">
+
+<h1 class="home-title">
+  🍲 Welcome to Hunger Relief Network
+</h1>
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section class="hero">
+
+  <div>
+
+    <h1>
+      Turn Surplus Into<br>
+      <em>Smiles.</em>
+    </h1>
+
+    <p>
+      From surplus meals to groceries and cooking ingredients,
+      connect useful resources with volunteers and organizations
+      that can help get them to people who need them. ❤️
+    </p>
+
+    <div class="hero-actions">
+
+      <button
+        type="button"
+        class="primary"
+        id="heroDonateButton"
+      >
+        📦 Donate Resources
+      </button>
+
+      <button
+        type="button"
+        class="ghost"
+        id="heroVolunteerButton"
+      >
+        🤝 Become a Volunteer
+      </button>
+
+    </div>
+
+
+    <div class="stat-row">
+
+      <div class="stat">
+        <div class="num mono" id="statMeals">0</div>
+        <div class="label">Resources shared</div>
+      </div>
+
+      <div class="stat">
+        <div class="num mono" id="statActive">0</div>
+        <div class="label">Active donations</div>
+      </div>
+
+      <div class="stat">
+        <div class="num mono" id="statCO2">0 kg</div>
+        <div class="label">CO₂e reduced</div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ROUTE CARD -->
+
+  <div class="route-card">
+
+    <h3>
+      How a donation travels
+    </h3>
+
+    <div class="route" id="routeTrack">
+
+      <div class="route-node on">
+        <div class="route-dot">🏪</div>
+        <span>Donor shares a resource</span>
+      </div>
+
+      <div class="route-node">
+        <div class="route-dot">🙋</div>
+        <span>Volunteer accepts</span>
+      </div>
+
+      <div class="route-node">
+        <div class="route-dot">🚚</div>
+        <span>Resource picked up</span>
+      </div>
+
+      <div class="route-node">
+        <div class="route-dot">🍛</div>
+        <span>Resource delivered</span>
+      </div>
+
+      <div class="route-travel"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHAT CAN BE SHARED
+     ========================================================= -->
+
+<section class="resource-types">
+
+  <div class="section-head">
+
+    <div>
+
+      <h2>
+        What Can Be Shared? 📦
+      </h2>
+
+      <p>
+        More than meals — useful resources can help communities too.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="cards3">
+
+    <div class="metric">
+      <div class="num">🍚</div>
+      <div class="label">Prepared Food</div>
+    </div>
+
+    <div class="metric">
+      <div class="num">🥕</div>
+      <div class="label">Groceries</div>
+    </div>
+
+    <div class="metric">
+      <div class="num">🧂</div>
+      <div class="label">Cooking Ingredients</div>
+    </div>
+
+  </div>
+
+
+  <div class="cards3">
+
+    <div class="metric">
+      <div class="num">📦</div>
+      <div class="label">
+        Packaged &amp; Non-Perishable Items
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHO CAN PARTICIPATE
+     ========================================================= -->
+
+<section class="participate-section">
+
+  <div class="section-head">
+
+    <div>
+
+      <h2>
+        Who Can Participate? 🤝
+      </h2>
+
+      <p>
+        Everyone can play a part in turning surplus into smiles.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="cards3">
+
+    <div class="metric">
+      <div class="num">🏪</div>
+      <div class="label">Donors &amp; Businesses</div>
+    </div>
+
+    <div class="metric">
+      <div class="num">🙋</div>
+      <div class="label">Volunteers</div>
+    </div>
+
+    <div class="metric">
+      <div class="num">🏢</div>
+      <div class="label">NGOs &amp; Organizations</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY HUNGER RELIEF NETWORK
+     ========================================================= -->
+
+<section class="why-section">
+
+  <div class="section-head">
+
+    <div>
+
+      <h2>
+        Why Hunger Relief Network? 💚
+      </h2>
+
+      <p>
+        Small actions can create a meaningful difference in our communities.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="cards3">
+
+    <div class="metric">
+      <div class="num">♻️</div>
+      <div class="label">
+        Reduce Useful Resources Going to Waste
+      </div>
+    </div>
+
+    <div class="metric">
+      <div class="num">🤝</div>
+      <div class="label">
+        Connect People Who Can Help
+      </div>
+    </div>
+
+    <div class="metric">
+      <div class="num">🌱</div>
+      <div class="label">
+        Build a More Sustainable Community
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+</div>
+
+
+<!-- =========================================================
+     DONOR VIEW
+     ========================================================= -->
+
+<div class="view" id="view-donate">
+
+  <div class="grid-2">
+
+
+    <!-- POST DONATION -->
+
+    <div class="panel">
+
+      <h3>
+        Post surplus food
+      </h3>
+
+
+      <form id="donateForm">
+
+        <label>
+          Donor / business name
+        </label>
+
+        <input
+          type="text"
+          id="d_name"
+          placeholder="e.g. Green Leaf Restaurant"
+          required
+        >
+
+
+        <label>
+          Donor type
+        </label>
+
+        <select id="d_type">
+
+          <option>
+            Restaurant
+          </option>
+
+          <option>
+            Hotel
+          </option>
+
+          <option>
+            Grocery store / bakery
+          </option>
+
+          <option>
+            Event organizer
+          </option>
+
+          <option>
+            Individual
+          </option>
+
+        </select>
+
+
+        <div class="row2">
+
+          <div>
+
+            <label>
+              Food item
+            </label>
+
+            <input
+              type="text"
+              id="d_food"
+              placeholder="e.g. Veg biryani"
+              required
+            >
+
+          </div>
+
+
+          <div>
+
+            <label>
+              Servings (approx.)
+            </label>
+
+            <input
+              type="number"
+              id="d_qty"
+              min="1"
+              placeholder="e.g. 40"
+              required
+            >
+
+          </div>
+
+        </div>
+
+
+        <label>
+          Pickup location
+        </label>
+
+        <input
+          type="text"
+          id="d_loc"
+          placeholder="Area / landmark"
+          required
+        >
+
+
+        <label>
+          Safe to collect within
+        </label>
+
+        <select id="d_expiry">
+
+          <option value="1">
+            1 hour
+          </option>
+
+          <option value="2" selected>
+            2 hours
+          </option>
+
+          <option value="4">
+            4 hours
+          </option>
+
+          <option value="6">
+            6 hours
+          </option>
+
+        </select>
+
+
+        <label>
+          Notes (optional)
+        </label>
+
+        <textarea
+          id="d_notes"
+          placeholder="Packaging, allergens, contact instructions…"
+        ></textarea>
+
+
+        <button
+          type="submit"
+          class="primary"
+        >
+          Post donation
+        </button>
+
+      </form>
+
+    </div>
+
+
+    <!-- MY DONATIONS -->
+
+    <div class="panel">
+
+      <h3>
+        Your posted donations
+      </h3>
+
+      <div id="myDonationsList">
+
+        <div class="empty">
+          Nothing posted yet — your donations will show up here.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     VOLUNTEER FIND & DELIVER VIEW
+     ========================================================= -->
+
+<div class="view" id="view-find">
+
+  <div class="section-head">
+
+    <div>
+
+      <h2>
+        Nearby donations
+      </h2>
+
+      <p>
+        Accept a donation, then update its status as you pick
+        it up and deliver it.
+      </p>
+
+    </div>
+
+
+    <button
+      class="ghost"
+      id="refreshFind"
+    >
+      Refresh list
+    </button>
+
+  </div>
+
+
+  <div
+    class="panel"
+    style="margin-bottom:20px;"
+  >
+
+    <label for="donationSearch">
+      Search donations
+    </label>
+
+    <input
+      type="text"
+      id="donationSearch"
+      placeholder="Search by food, donor or location..."
+    >
+
+
+    <label
+      for="statusFilter"
+      style="margin-top:12px;"
+    >
+      Filter by status
+    </label>
+
+    <select id="statusFilter">
+
+      <option value="all">
+        All
+      </option>
+
+      <option value="available">
+        Available
+      </option>
+
+      <option value="accepted">
+        Accepted
+      </option>
+
+      <option value="picked_up">
+        Picked up
+      </option>
+
+      <option value="delivered">
+        Delivered
+      </option>
+
+    </select>
+
+  </div>
+
+
+  <div id="findList">
+
+    <div class="empty">
+      No donations posted yet.
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     IMPACT / RECORDS
+     ========================================================= -->
+
+<div class="view" id="view-impact">
+
+  <div class="section-head">
+
+    <div>
+
+      <h2>
+        Impact &amp; records
+      </h2>
+
+      <p>
+        A running log of donations on the network.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="cards3">
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="m_total"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Total donations posted
+      </div>
+
+    </div>
+
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="m_delivered"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Successfully delivered
+      </div>
+
+    </div>
+
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="m_weight"
+      >
+        0 kg
+      </div>
+
+      <div class="label">
+        Food weight rescued
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="panel">
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <th>Food</th>
+          <th>Donor</th>
+          <th>Servings</th>
+          <th>Status</th>
+          <th>Accepted by</th>
+          <th>Posted</th>
+
+        </tr>
+
+      </thead>
+
+
+      <tbody id="recordsBody">
+
+        <tr>
+
+          <td
+            colspan="6"
+            style="
+              color:var(--text-muted);
+              text-align:center;
+              padding:30px;
+            "
+          >
+            No records yet.
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     DONOR DASHBOARD
+     ========================================================= -->
+
+<div class="view" id="view-dashboard">
+
+  <div class="section-head">
+
+    <div>
+
+      <h2>
+        Donor Dashboard
+      </h2>
+
+      <p id="dashboardWelcome">
+        Welcome!
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="cards3">
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="dashboardTotal"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Total donations
+      </div>
+
+    </div>
+
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="dashboardActive"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Active donations
+      </div>
+
+    </div>
+
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="dashboardDelivered"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Delivered donations
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="panel">
+
+    <h3>
+      Your donations
+    </h3>
+
+    <div id="dashboardDonationList">
+
+      <div class="empty">
+        No donations yet.
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     VOLUNTEER DASHBOARD
+     ========================================================= -->
+
+<div class="view" id="view-volunteer">
+
+  <div class="section-head">
+
+    <div>
+
+      <h2>
+        Volunteer Dashboard
+      </h2>
+
+      <p id="volunteerWelcome">
+        Welcome!
+      </p>
+
+      <p>
+        Manage donations that need to be collected and delivered.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <div class="cards3">
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="volAvailable"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Available
+      </div>
+
+    </div>
+
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="volAccepted"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Accepted
+      </div>
+
+    </div>
+
+
+    <div class="metric">
+
+      <div
+        class="num"
+        id="volDelivered"
+      >
+        0
+      </div>
+
+      <div class="label">
+        Delivered
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="panel">
+
+    <h3>
+      Donations to manage
+    </h3>
+
+    <div id="volunteerDonationList">
+
+      <div class="empty">
+        No donations available.
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     LOGIN POPUP
+     ========================================================= -->
+
+<div
+  class="login-overlay"
+  id="loginOverlay"
+>
+
+  <div class="login-popup">
+
+    <button
+      type="button"
+      class="login-close"
+      id="closeLogin"
+      aria-label="Close login"
+    >
+      &times;
+    </button>
+
+
+    <!-- EMAIL STEP -->
+
+    <div id="loginStepEmail">
+
+      <h2>
+        Login
+      </h2>
+
+      <p>
+        Sign in to your Hunger Relief Network account.
+      </p>
+
+      <label for="popupLoginEmail">
+        Email
+      </label>
+
+      <input
+        type="email"
+        id="popupLoginEmail"
+        placeholder="Enter your email"
+        autocomplete="email"
+      >
+
+      <button
+        type="button"
+        class="primary"
+        id="emailNextButton"
+      >
+        Next
+      </button>
+
+
+      <p class="register-link">
+
+        Don't have an account?
+
+        <button
+          type="button"
+          id="openRegisterPopup"
+        >
+          Register
+        </button>
+
+      </p>
+
+    </div>
+
+
+    <!-- PASSWORD STEP -->
+
+    <div
+      id="loginStepPassword"
+      style="display:none;"
+    >
+
+      <h2>
+        Welcome back
+      </h2>
+
+      <p id="loginEmailDisplay"></p>
+
+      <label for="popupLoginPassword">
+        Password
+      </label>
+
+      <input
+        type="password"
+        id="popupLoginPassword"
+        placeholder="Enter your password"
+        autocomplete="current-password"
+      >
+
+      <button
+        type="button"
+        class="primary"
+        id="popupLoginButton"
+      >
+        Login
+      </button>
+
+      <button
+        type="button"
+        class="login-back"
+        id="loginBackButton"
+      >
+        ← Back
+      </button>
+
+    </div>
+
+
+    <div
+      id="popupLoginMessage"
+      class="donation-meta"
+    ></div>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     REGISTER POPUP
+     IMPORTANT: This is OUTSIDE the login popup.
+     ========================================================= -->
+
+<div
+  class="register-overlay"
+  id="registerOverlay"
+>
+
+  <div class="register-popup">
+
+    <button
+      type="button"
+      class="login-close"
+      id="closeRegister"
+    >
+      &times;
+    </button>
+
+
+    <h2>
+      Create Account
+    </h2>
+
+    <p>
+      Join Hunger Relief Network and make a difference. 💚
+    </p>
+
+
+    <form id="registerForm">
+
+      <label for="register_name">
+        Name
+      </label>
+
+      <input
+        type="text"
+        id="register_name"
+        placeholder="Enter your name"
+        required
+      >
+
+
+      <label for="register_email">
+        Email
+      </label>
+
+      <input
+        type="email"
+        id="register_email"
+        placeholder="Enter your email"
+        required
+      >
+
+
+      <label for="register_password">
+        Password
+      </label>
+
+      <input
+        type="password"
+        id="register_password"
+        placeholder="Create a password"
+        required
+      >
+
+
+      <label for="register_role">
+        Role
+      </label>
+
+      <select id="register_role">
+
+        <option value="DONOR">
+          Donor
+        </option>
+
+        <option value="VOLUNTEER">
+          Volunteer
+        </option>
+
+      </select>
+
+
+      <button
+        type="submit"
+        class="primary"
+      >
+        Create Account
+      </button>
+
+
+      <div
+        id="registerMessage"
+        class="donation-meta"
+      ></div>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<!-- =========================================================
+     PROFILE POPUP
+     IMPORTANT: This is OUTSIDE the register popup.
+     ========================================================= -->
+
+<div
+  class="profile-overlay"
+  id="profileOverlay"
+>
+
+  <div class="profile-popup">
+
+    <button
+      type="button"
+      class="login-close"
+      id="closeProfile"
+      aria-label="Close profile"
+    >
+      &times;
+    </button>
+
+
+    <h2>
+      👤 My Profile
+    </h2>
+
+
+    <p>
+      <strong>Name:</strong>
+      <span id="profileName"></span>
+    </p>
+
+
+    <p>
+      <strong>Email:</strong>
+      <span id="profileEmail"></span>
+    </p>
+
+
+    <p>
+      <strong>Role:</strong>
+      <span id="profileRole"></span>
+    </p>
+
+
+    <button
+      type="button"
+      class="primary"
+      id="profileLogoutButton"
+    >
+      Logout
+    </button>
+
+  </div>
+
+</div>
+
+
+</main>
+
+
+<!-- =========================================================
+     TOAST
+     ========================================================= -->
+
+<div
+  class="toast"
+  id="toast"
+></div>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+<footer>
+    <h3>Hunger Relief Network 2026</h3>
+    <p>Turning surplus into smiles, one resource at a time💚</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
