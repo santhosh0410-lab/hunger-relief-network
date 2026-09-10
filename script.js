@@ -561,7 +561,7 @@ async function loadDonations() {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/donations"
+                "https://hunger-relief-network.onrender.com/api/donations"
             );
 
 
@@ -738,7 +738,7 @@ if (donateForm) {
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/api/donations",
+                        "https://hunger-relief-network.onrender.com/api/donations",
                         {
 
                             method: "POST",
@@ -1283,7 +1283,7 @@ async function acceptDonation(
 
         const response =
             await fetch(
-                `http://localhost:3000/api/donations/${donationId}/accept`,
+                `https://hunger-relief-network.onrender.com/api/donations/${donationId}/accept`,
                 {
 
                     method: "PUT",
@@ -1384,14 +1384,14 @@ async function advanceStatus(
     if (newStatus === "picked_up") {
 
         endpoint =
-            `http://localhost:3000/api/donations/${donationId}/pickup`;
+            `https://hunger-relief-network.onrender.com/api/donations/${donationId}/pickup`;
     }
 
 
     else if (newStatus === "delivered") {
 
         endpoint =
-            `http://localhost:3000/api/donations/${donationId}/deliver`;
+            `https://hunger-relief-network.onrender.com/api/donations/${donationId}/deliver`;
     }
 
 
@@ -2401,7 +2401,7 @@ if (registerForm) {
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/api/users/register",
+                        "https://hunger-relief-network.onrender.com/api/users/register",
                         {
 
                             method: "POST",
@@ -2817,7 +2817,7 @@ if (popupLoginButton) {
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/api/users/login",
+                        "https://hunger-relief-network.onrender.com/api/users/login",
                         {
 
                             method: "POST",
